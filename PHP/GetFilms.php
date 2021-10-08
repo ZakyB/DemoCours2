@@ -4,7 +4,7 @@ include 'cnx.php';
 
 
 $sql = $cnx->prepare("Select codeFilm,nomFilm,imageFilm,genreFilm,nbVotes,totalVotes FROM `film` where `codeFilm` IN
-(select `numFilm`FROM `projeter` where `numCine`= ?");
+(select `numFilm`FROM `projeter` where `numCinema`= ?)");
 $sql->bindValue(1,$_GET['numCine']);
 $sql->execute();
 

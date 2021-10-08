@@ -32,7 +32,7 @@ function GetFilms(codeCine)
             },
             error: function()
             {
-                alert("Erreur sur la page jeux");
+                alert("Erreur sur la page film");
             }
         }
     )

@@ -7,7 +7,7 @@ $sql->execute();
 echo "<table border=1   >";
 foreach($sql->fetchAll(PDO:: FETCH_ASSOC) as $ligne)
 {
-    echo "<tr onclick='GetFilms(".$ligne['codeCine'].")'>";
+    echo "<tr onclick='GetFilms(`".$ligne['codeCine']."`)'>";
         echo "<td>".$ligne['codeCine']."</td>";
         echo "<td>".$ligne['nomCine']."</td>";
         echo "<td><img src='".$ligne['imageCine']."'></td>";
